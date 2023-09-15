@@ -1,0 +1,68 @@
+INSERT INTO medico (cpf, crm, nome)VALUES ('111.111.111-11', '12345 CRC-TO', 'Dr. João da Silva Solto');
+INSERT INTO medico (cpf, crm, nome)VALUES ('222.111.111-11','56641 CRC-TO', 'Dra. Paula dos Santos Freitas');
+INSERT INTO medico (cpf, crm, nome)VALUES ('333.111.111-11','99424 CRC-GO', 'Dr. José Esteves Fernandes');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Maria Silva Gama', '123.456.789-00', '(63) 9999-9999');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Jose Maria Duarte', '523.456.780-99', '(63) 9998-9998');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Margarida Cunha Castro', '999.456.780-88', '(63) 8999-8999');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('João da Silva', '987.654.321-00', '(11) 8888-8888');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Ana Paula Oliveira', '111.222.333-01', '(22) 7777-7777');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Carlos Pereira', '444.555.666-02', '(33) 6666-6666');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Mariana Santos', '777.888.999-03', '(44) 5555-5555');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Pedro Lima', '222.333.444-04', '(55) 4444-4444');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Camila Ribeiro', '555.666.777-05', '(66) 3333-3333');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Lucas Alves', '333.444.555-06', '(77) 2222-2222');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Juliana Ferreira', '666.777.888-07', '(88) 1111-1111');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Ricardo Martins', '444.555.666-08', '(99) 0000-0000');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Isabela Gonçalves', '999.888.777-09', '(00) 9999-9999');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Thiago Oliveira', '222.333.444-10', '(11) 7777-7777');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Amanda Costa', '111.222.333-11', '(22) 6666-6666');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Marcos Pereira', '777.888.999-12', '(33) 5555-5555');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Sofia Lima', '444.555.666-13', '(44) 4444-4444');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Felipe Ribeiro', '555.666.777-14', '(55) 3333-3333');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Laura Alves', '333.444.555-15', '(66) 2222-2222');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Diego Ferreira', '666.777.888-16', '(77) 1111-1111');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Carla Martins', '444.555.666-17', '(88) 0000-0000');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Fernando Gonçalves', '999.888.777-18', '(99) 9999-9999');
+INSERT INTO paciente (nome, cpf, telefone) VALUES ('Larissa Oliveira', '222.333.444-19', '(00) 7777-7777');
+
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-20 09:22',150.00, 1, 1, 'Consulta de rotina');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-07-30 11:30',0, 1, 1, 'Consulta de Retorno');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-06-14 14:20',250, 2, 2, 'checkup geral');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-07-13 16:00',350, 1, 1, 'checkup geral');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-05-10 13:50',190, 1, 1, 'pré-operatório');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-06-05 20:00',150, 1, 2, 'Reavaliação');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-07-03 18:30',150, 2, 1, 'Reavaliação');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-20 09:22', 150.00, 1, 1, 'Consulta de rotina');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-20 10:15', 180.00, 2, 2, 'Acompanhamento médico');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-21 14:30', 200.00, 3, 3, 'Exames de saúde');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-21 15:45', 120.00, 1, 4, 'Consulta de rotina');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-22 11:00', 150.00, 2, 5, 'Acompanhamento médico');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-22 12:30', 180.00, 3, 6, 'Exames de saúde');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-23 09:45', 200.00, 3, 7, 'Consulta de rotina');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-23 11:15', 120.00, 3, 8, 'Acompanhamento médico');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-24 14:00', 150.00, 1, 9, 'Exames de saúde');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-24 15:30', 180.00, 1, 10, 'Consulta de rotina');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-25 08:45', 200.00, 1, 11, 'Acompanhamento médico');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-25 10:00', 120.00, 2, 12, 'Exames de saúde');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-26 14:15', 150.00, 3, 13, 'Consulta de rotina');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-26 15:45', 180.00, 2, 14, 'Acompanhamento médico');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-27 09:30', 200.00, 3, 15, 'Exames de saúde');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-27 11:00', 120.00, 1, 16, 'Consulta de rotina');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-28 14:45', 150.00, 1, 17, 'Acompanhamento médico');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-28 16:15', 180.00, 1, 18, 'Exames de saúde');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-29 08:30', 200.00, 2, 19, 'Consulta de rotina');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-29 10:15', 120.00, 2, 20, 'Acompanhamento médico');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-30 15:00', 150.00, 1, 21, 'Exames de saúde');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-30 16:30', 180.00, 2, 22, 'Consulta de rotina');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-31 10:45', 200.00, 3, 23, 'Acompanhamento médico');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-08-31 12:15', 120.00, 3, 4, 'Exames de saúde');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-09-01 14:00', 150.00, 3, 5, 'Consulta de rotina');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-09-01 15:30', 180.00, 1, 6, 'Acompanhamento médico');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-09-02 09:15', 200.00, 2, 7, 'Exames de saúde');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-09-02 11:00', 120.00, 2, 8, 'Consulta de rotina');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-09-03 14:30', 150.00, 3, 9, 'Acompanhamento médico');
+INSERT INTO consulta (local_date_time, valor, medico_id, paciente_id, observacao) VALUES ('2023-09-03 16:00', 180.00, 3, 10, 'Exames de saúde');
+
+
+
+

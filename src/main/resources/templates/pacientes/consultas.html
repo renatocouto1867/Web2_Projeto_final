@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Consultas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <a href="http://localhost:8080/paciente/list" class="btn btn-outline-primary">Voltar</a>
+</div>
+<div class="container">
+
+    <h1 class="text-center">Lista de consultas</h1>
+
+    <h2>Paciente: <span th:text="${paciente.getNome()}"></span></h2>
+    <hr>
+    <table class="table table-striped" border="1">
+        <thead class="table-dark">
+        <tr>
+            <th>Codigo</th>
+            <th>Data</th>
+            <th>Hora</th>
+            <th>Valor</th>
+            <th>Observações</th>
+            <th>Medico</th>
+        </tr>
+        </thead>
+        <tr th:each="c : ${paciente.getConsultaList()}">
+            <td th:text="${c.id}"></td>
+            <td th:text="${#temporals.format(c.getLocalDateTime(), 'dd/MM/yyyy')}"></td>
+            <td th:text="${#temporals.format(c.getLocalDateTime(), 'HH:mm')}"></td>
+            <td th:text="${#numbers.formatDecimal(c.valor,1,2,'COMMA')}"></td>
+            <td th:text="${c.observacao}"></td>
+            <td th:text="${c.medico.getNome()}"></td>
+        </tr>
+        <tfoot>
+        <tr>
+            <td colspan="5">Total: R$ <span
+            th:text="${#numbers.formatDecimal(paciente.valorTotalConsulta(),1,2,'COMMA')}"></span></td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+</body>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+</html>
+

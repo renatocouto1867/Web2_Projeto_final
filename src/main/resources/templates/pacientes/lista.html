@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Pacientes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <a href="http://localhost:8080/" class="btn btn-outline-primary">Home</a>
+</div>
+<div class="container">
+    <table class="table table-striped" border="1">
+        <thead class="table-dark">
+        <tr>
+            <th>Codigo</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Telefone</th>
+            <th>Consultas</th>
+            <!--  <th>Editar</th>
+              <th>Excluir</th>
+              -->
+          </tr>
+          </thead>
+          <tr th:each="p, paciente  : ${paciente}">
+              <td th:text="${p.id}"></td>
+              <td th:text="${p.nome}"></td>
+              <td th:text="${p.cpf}"></td>
+              <td th:text="${p.telefone}"></td>
+              <td><a th:href="@{/paciente/consulta/{id}(id=${p.id})}">Consultas</a></td>
+
+              <!-- <td><a th:href="@{/paciente/edit/{id}(id=${p.id})}">Editar</a></td>
+               <td><a onclick="return window.confirm('Tem certeza que deseja excluir este registro?')"
+                      th:href="@{/paciente/remove/{id}(id=${p.id})}">Excluir</a></td>
+                      -->
+           </tr>
+       </table>
+   </div>
+   </body>
+   <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+   </html>
+
+
